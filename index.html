@@ -3,25 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ScaleUp - Digital Agency</title>
+  <title>ScaleUp - Digital Agency | Web Development, Branding, and SMM</title>
+  
+  <!-- Meta Description for SEO -->
+  <meta name="description" content="ScaleUp is a digital agency specializing in web development, branding, and social media marketing. We help businesses grow with impactful digital solutions.">
+  
+  <!-- Meta Keywords for SEO -->
+  <meta name="keywords" content="web development, branding, social media marketing, digital agency, SaaS development, AI integrations, custom software development">
+  
+  <!-- Open Graph Tags for Social Sharing -->
+  <meta property="og:title" content="ScaleUp - Digital Agency">
+  <meta property="og:description" content="ScaleUp is a digital agency specializing in web development, branding, and social media marketing.">
+  <meta property="og:image" content="path_to_image.jpg">
+  <meta property="og:url" content="your_website_url">
+  
+  <!-- Twitter Card Data -->
+  <meta name="twitter:title" content="ScaleUp - Digital Agency">
+  <meta name="twitter:description" content="ScaleUp is a digital agency specializing in web development, branding, and social media marketing.">
+  <meta name="twitter:image" content="path_to_image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <!-- Google Fonts for Better Typography -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Font Awesome for Icons -->
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+  <!-- Favicon for Branding -->
+  <link rel="icon" href="images/favicon-32x32.png" type="image/x-icon">
 </head>
 <body>
 
-  <!-- Navigation Bar -->
-<nav class="navbar">
-    <div class="navbar-container">
-      <h1 class="navbar-logo">ScaleUp</h1>
-      <ul class="navbar-links">
-        <li><a href="#contact-form">Discuss Project</a></li>
-        <li><a href="#projects-section">Projects</a></li>
-      </ul>
-    </div>
-  </nav>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <!-- Add a link to the home page for the logo -->
+            <a href="#home" class="navbar-logo" style="text-decoration: none; color: #fff;">ScaleUp</a>
+            <ul class="navbar-links">
+                <li><a href="#contact-form" style="color: #fff;">Discuss Project</a></li>
+                <li><a href="#projects-section" style="color: #fff;">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+    
   
-
   <!-- Header Section -->
   <header class="hero-section">
     <div class="hero-content">
@@ -36,23 +61,22 @@
     <p>We deliver cutting-edge solutions that transform businesses and brands into market leaders.</p>
   </section>
 
-<!-- What We Do Section (Replaced with Rectangle Cube Design) -->
-<section class="what-we-do-section">
+  <!-- What We Do Section -->
+  <section class="what-we-do-section">
     <div class="cube-container">
       <div class="cube">
         <div class="cube-content">
           <h2>What We Do</h2>
-          <p>We develop websites, brandbooks, logos and corporate identity. We promote business in a digital environment. We know who your customers are and where to find them. We help you stand out online. We show everything that is not said.</p>
+          <p>We develop websites, brandbooks, logos, and corporate identity. We promote businesses in the digital environment. We know who your customers are and where to find them. We help you stand out online. We show everything that is not said.</p>
         </div>
       </div>
     </div>
   </section>
-  
-  
+
   <!-- Services We Are Best In Section -->
-<section class="services-section">
+  <section class="services-section">
     <h2>Services We Are Best In</h2>
-  
+
     <!-- Website Development Section in a Box -->
     <div class="service-category-box">
       <h3>Website Development</h3>
@@ -67,7 +91,7 @@
         <li>Custom Software Development</li>
       </ul>
     </div>
-  
+
     <!-- Branding Section in a Box -->
     <div class="service-category-box">
       <h3>Branding</h3>
@@ -83,7 +107,7 @@
         <li>Analytics Optimization</li>
       </ul>
     </div>
-  
+
     <!-- SMM Section in a Box -->
     <div class="service-category-box">
       <h3>SMM (Social Media Marketing)</h3>
@@ -94,35 +118,37 @@
         <li><strong>Targeted advertising</strong></li>
       </ul>
     </div>
-  
+
     <!-- Contact Info Section -->
     <div class="contact-info">
       <p><strong>Discuss Project:</strong></p>
       <p>Contact us: <a href="mailto:scaleupagencydigital@gmail.com">scaleupagencydigital@gmail.com</a></p>
     </div>
   </section>
-  
-  
-  
 
   <!-- Projects Section -->
   <section id="projects-section" class="projects-section">
     <h2>Our Projects</h2>
     <div class="projects-grid">
+      <!-- Project 1 -->
       <div class="project" onclick="openProject('project1')">
-        <img src="https://via.placeholder.com/500" alt="Project 1">
+        <img src="images/1.png" alt="Project 1"> <!-- Replace with your image -->
         <h3>Project 1</h3>
       </div>
+      <!-- Project 2 -->
       <div class="project" onclick="openProject('project2')">
-        <img src="https://via.placeholder.com/500" alt="Project 2">
+        <img src="images/2.png" alt="Project 2"> <!-- Replace with your image -->
         <h3>Project 2</h3>
       </div>
+      <!-- Project 3 -->
       <div class="project" onclick="openProject('project3')">
-        <img src="https://via.placeholder.com/500" alt="Project 3">
+        <img src="images/3.png" alt="Project 3"> <!-- Replace with your image -->
         <h3>Project 3</h3>
       </div>
     </div>
   </section>
+  
+
 
   <!-- Project Detail Modal -->
   <div id="projectModal" class="modal">
