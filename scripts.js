@@ -7,15 +7,15 @@ function openProject(projectId) {
     // Set modal content based on clicked project
     if (projectId === "project1") {
       title.innerText = "Project 1";
-      img.src = "https://via.placeholder.com/500";
-      description.innerText = "Detailed description of Project 1.";
+      img.src = "images/1.png";
+      description.innerText = "best project in da world";
     } else if (projectId === "project2") {
       title.innerText = "Project 2";
-      img.src = "https://via.placeholder.com/500";
+      img.src = "images/1.png";
       description.innerText = "Detailed description of Project 2.";
     } else if (projectId === "project3") {
       title.innerText = "Project 3";
-      img.src = "https://via.placeholder.com/500";
+      img.src = "images/1.png";
       description.innerText = "Detailed description of Project 3.";
     }
   
