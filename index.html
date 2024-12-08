@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ScaleUp - Digital Agency</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+<nav class="navbar">
+    <div class="navbar-container">
+      <h1 class="navbar-logo">ScaleUp</h1>
+      <ul class="navbar-links">
+        <li><a href="#contact-form">Discuss Project</a></li>
+        <li><a href="#projects-section">Projects</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+
+  <!-- Header Section -->
+  <header class="hero-section">
+    <div class="hero-content">
+      <h1>ScaleUp</h1>
+      <p>Transforming Ideas into Impactful Digital Experiences</p>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <h2>Unlocking Innovation, Elevating Brands</h2>
+    <p>We deliver cutting-edge solutions that transform businesses and brands into market leaders.</p>
+  </section>
+
+<!-- What We Do Section (Replaced with Rectangle Cube Design) -->
+<section class="what-we-do-section">
+    <div class="cube-container">
+      <div class="cube">
+        <div class="cube-content">
+          <h2>What We Do</h2>
+          <p>We develop websites, brandbooks, logos and corporate identity. We promote business in a digital environment. We know who your customers are and where to find them. We help you stand out online. We show everything that is not said.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <!-- Services We Are Best In Section -->
+<section class="services-section">
+    <h2>Services We Are Best In</h2>
+  
+    <!-- Website Development Section in a Box -->
+    <div class="service-category-box">
+      <h3>Website Development</h3>
+      <ul>
+        <li><strong>Landing pages</strong></li>
+        <li><strong>Online stores</strong></li>
+        <li><strong>Corporate websites</strong></li>
+        <li>SaaS Development/Algorithms</li>
+        <li>Building AI chatbots, integrating AI solutions, and developing custom software from start to finish.</li>
+        <li>Custom Chatbots</li>
+        <li>AI Integrations</li>
+        <li>Custom Software Development</li>
+      </ul>
+    </div>
+  
+    <!-- Branding Section in a Box -->
+    <div class="service-category-box">
+      <h3>Branding</h3>
+      <ul>
+        <li>Crafting a visual identity that speaks for your product, showing what words can't.</li>
+        <li><strong>Brand Books</strong></li>
+        <li><strong>Identity Design</strong></li>
+        <li><strong>Packaging</strong></li>
+        <li>SEO-optimization</li>
+        <li>A comprehensive approach: from website audit to implementing technical improvements.</li>
+        <li>Analytics Integration</li>
+        <li>Meta Tag Implementation</li>
+        <li>Analytics Optimization</li>
+      </ul>
+    </div>
+  
+    <!-- SMM Section in a Box -->
+    <div class="service-category-box">
+      <h3>SMM (Social Media Marketing)</h3>
+      <ul>
+        <li>Promotion in social networks. Work with bloggers. Content Creation</li>
+        <li><strong>Strategy</strong></li>
+        <li><strong>Visual image</strong></li>
+        <li><strong>Targeted advertising</strong></li>
+      </ul>
+    </div>
+  
+    <!-- Contact Info Section -->
+    <div class="contact-info">
+      <p><strong>Discuss Project:</strong></p>
+      <p>Contact us: <a href="mailto:scaleupagencydigital@gmail.com">scaleupagencydigital@gmail.com</a></p>
+    </div>
+  </section>
+  
+  
+  
+
+  <!-- Projects Section -->
+  <section id="projects-section" class="projects-section">
+    <h2>Our Projects</h2>
+    <div class="projects-grid">
+      <div class="project" onclick="openProject('project1')">
+        <img src="https://via.placeholder.com/500" alt="Project 1">
+        <h3>Project 1</h3>
+      </div>
+      <div class="project" onclick="openProject('project2')">
+        <img src="https://via.placeholder.com/500" alt="Project 2">
+        <h3>Project 2</h3>
+      </div>
+      <div class="project" onclick="openProject('project3')">
+        <img src="https://via.placeholder.com/500" alt="Project 3">
+        <h3>Project 3</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Detail Modal -->
+  <div id="projectModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h3 id="modal-title">Project Title</h3>
+      <img id="modal-img" src="" alt="Project Image">
+      <p id="modal-description">Detailed project description goes here...</p>
+    </div>
+  </div>
+
+  <!-- Contact Form Section -->
+  <section id="contact-form" class="contact-section">
+    <h2>Discuss Your Project</h2>
+    <form action="https://formspree.io/f/mvgonkqb" method="POST">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
