@@ -146,82 +146,92 @@ body {
     }
   }
   
-
   /* Services We Are Best In Section Styling */
 .services-section {
-  padding: 60px 20px;
-  background-color: #f4f7fa;
-  text-align: center;
-}
-
-.services-section h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #003366; /* Dark Blue */
-  margin-bottom: 40px;
-}
-
-.service-category {
-  margin-bottom: 40px;
-}
-
-.service-category h3 {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #003366;
-  margin-bottom: 15px;
-}
-
-.service-category ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.service-category li {
-  font-size: 1rem;
-  line-height: 1.8;
-  color: #333;
-}
-
-.service-category li strong {
-  font-weight: bold;
-  color: #003366;
-}
-
-.contact-info {
-  margin-top: 40px;
-  font-size: 1.1rem;
-}
-
-.contact-info a {
-  color: #003366;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.contact-info a:hover {
-  text-decoration: underline;
-}
-
-/* Mobile Responsiveness */
-@media screen and (max-width: 768px) {
+    padding: 60px 20px;
+    background-color: #f4f7fa;
+    text-align: center;
+  }
+  
   .services-section h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #003366; /* Dark Blue */
+    margin-bottom: 40px;
   }
-
-  .service-category h3 {
-    font-size: 1.5rem;
+  
+  .service-category-box {
+    background-color: #ffffff;
+    padding: 25px;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: box-shadow 0.3s ease;
   }
-
-  .service-category li {
-    font-size: 0.9rem;
+  
+  .service-category-box:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
   }
-
-  .contact-info p {
+  
+  .service-category-box h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #003366;
+    margin-bottom: 15px;
+  }
+  
+  .service-category-box ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .service-category-box li {
     font-size: 1rem;
+    line-height: 1.8;
+    color: #333;
   }
-}
-
+  
+  .service-category-box li strong {
+    font-weight: bold;
+    color: #003366;
+  }
+  
+  .contact-info {
+    margin-top: 40px;
+    font-size: 1.1rem;
+  }
+  
+  .contact-info a {
+    color: #003366;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Mobile Responsiveness */
+  @media screen and (max-width: 768px) {
+    .services-section h2 {
+      font-size: 2rem;
+    }
+  
+    .service-category-box h3 {
+      font-size: 1.5rem;
+    }
+  
+    .service-category-box li {
+      font-size: 0.9rem;
+    }
+  
+    .contact-info p {
+      font-size: 1rem;
+    }
+  }
+  
+  
   
   
   /* Projects Section */
@@ -248,12 +258,10 @@ body {
     transition: transform 0.3s;
   }
   
-  .projects-grid img {
+  .project img {
     width: 100%;
     height: auto;
-    border-radius: 10px; /* Optional for rounded corners */
   }
-
   
   .project:hover {
     transform: scale(1.05);
@@ -347,4 +355,3 @@ body {
     text-decoration: none;
     cursor: pointer;
   }
-  
