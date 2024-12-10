@@ -7,43 +7,54 @@ body {
     color: #2c3e50;
   }
   
-/* Ensure the navbar aligns properly */
-.navbar {
+  .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #003366; /* Darker background for better contrast */
+    background-color: #003366;
 }
 
-/* Style the ScaleUp logo */
 .navbar-logo {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #ffffff; /* White color for contrast */
+  font-size: 1.5rem; /* Adjust font size */
+  font-weight: bold; /* Make it bold */
+  color: #ffffff; /* Text color */
+  text-decoration: none; /* Remove underline */
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth hover effect */
 }
 
-/* Style the links in the navbar */
+.navbar-logo:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+  color: #ffcc00; /* Optional hover color */
+}
+
+
+.navbar-links {
+  display: flex;
+  margin-left: auto; /* Pushes the links to the far right */
+  gap: 20px; /* Adds spacing between the links */
+}
+
 .navbar-links li {
-    display: inline-block;
-    margin-left: 20px;
+  list-style: none; /* Removes bullet points */
 }
 
 .navbar-links a {
-    font-size: 1rem;
-    font-weight: 400;
-    color: #ffffff; /* White color for readability */
-    text-decoration: none;
-    transition: color 0.3s ease;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #ffffff; /* White color for readability */
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .navbar-links a:hover {
-    color: #ffcc00; /* Highlight effect on hover */
+  color: #ffcc00; /* Highlight effect on hover */
 }
+
   
   /* Hero Section */
   .hero-section {
-    background: #2980b9;
+    background: #66B3FF;
     color: white;
     text-align: center;
     padding: 150px 20px;
@@ -74,69 +85,84 @@ body {
     color: #777;
   }
   
-  /* What We Do Rectangle Cube Section Styling */
+/* What We Do Rectangle Cube Section Styling */
 .what-we-do-section {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px 0;
+    padding: 100px 0;
     background-color: #003366; /* Dark Blue background */
-  }
-  
-  .cube-container {
+}
+
+.cube-container {
     perspective: 1000px;
-  }
-  
-  .cube {
+}
+
+.cube {
     width: 400px; /* Increased width for rectangle shape */
     height: 250px; /* Decreased height for rectangle shape */
     position: relative;
     transform-style: preserve-3d;
     transform: rotateX(-30deg) rotateY(45deg);
     transition: transform 0.5s ease;
-  }
-  
-  .cube:hover {
+}
+
+.cube:hover {
     transform: rotateX(0deg) rotateY(360deg);
-  }
-  
-  .cube-content {
+}
+
+.cube-content {
     background-color: #fff;
-    padding: 40px;
+    padding: 30px;
     border-radius: 15px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     text-align: center;
     color: #003366;
     height: 100%;
-  }
-  
-  .cube-content h2 {
+}
+
+.cube-content h2 {
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 20px;
-  }
-  
-  .cube-content p {
+}
+
+.cube-content p {
     font-size: 1rem;
     line-height: 1.5;
     color: #333;
     margin-bottom: 0;
-  }
-  
-  @media screen and (max-width: 768px) {
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
     .cube {
-      width: 350px;
-      height: 230px;
+        width: 350px;
+        height: 230px;
+        /* Disable 3D rotation on mobile by resetting the transform */
+        transform: rotateX(0deg) rotateY(0deg);
     }
-  
+
+    .cube:hover {
+        /* No hover effect on mobile */
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+
     .cube-content h2 {
-      font-size: 1.5rem;
+        font-size: 1.5rem;
     }
-  
+
     .cube-content p {
-      font-size: 0.9rem;
+        font-size: 0.9rem;
     }
-  }
+
+    /* Move the cube container (box with text) up on mobile */
+    .cube-container {
+        transform: translateY(-20px); /* Move the box up by 20px (adjust as needed) */
+    }
+}
+
+
   
   /* Services We Are Best In Section Styling */
 .services-section {
